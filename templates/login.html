@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block title %}极客学院{% endblock %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block content %}
+<!--
+<div class="container" style="background-color:#FFFFFF;">
+    <div class="page-header">
+        <h1>网页远控</h1>
+    </div>
+    <form action="" method="post" name="submit">
+        {{ form.csrf_token }}
+        <div class="col-md-12">
+            <div class="col-md-6" id="command">
+                <div class="col-md-12">
+                    <p>
+                        {{ form.commandInConfig(class="col-md-12", value="输入命令") }}
+                    </p>
+                </div>
+                <div class="col-md-12">
+                    {{ form.commandInWrite(class="col-md-12", cols="50", rows="10")|safe }}
+                </div>
+            </div>
+            <div class="col-md-6" id="login">
+                <div class="col-md-6">
+                    {{ form.userName.label(class="col-md-4") }}{{ form.userName(class="col-md-8") }}
+                    {{ form.password.label(class="col-md-4") }}{{ form.password(class="col-md-8", type="password") }}
+                    {{ form.sendCommand(class="btn btn-default", type="submit",id="submit") }}{{
+                    form.clearCommand(class="btn btn-default", type="Reset") }}
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+-->
+<div>
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label for="exampleInputName2" class="col-sm-2 control-label">Username</label>
+            <div class="col-xs-4">
+                <input type="username" class="form-control" id="exampleInputName2" placeholder="Username">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1" class="col-sm-2 control-label">Password</label>
+            <div class="col-xs-4">
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-2">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> Remember Me
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-2">
+                <button type="submit" class="btn btn-default">Sign in</button>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}

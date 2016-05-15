@@ -1,0 +1,7 @@
+.idea
+*~
+*.pyc
+*.swp
+*.pot
+*.mo
+qblog
